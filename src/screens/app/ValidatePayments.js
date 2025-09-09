@@ -30,7 +30,7 @@ export default function ValidatePayments() {
   const [paymentDetails, setPaymentDetails] = useState({})
   const [messageError, setMessageError] = useState(false)
   useEffect(() => {
-    fetch('https://gist.githubusercontent.com/kelsupdate/8dddea655d66242d84210dff852b3054/raw/da62f46c4c7b5c6b7993415c8ffdbf8539bcdd6b/gistfile1.txt')
+    fetch('https://gist.githubusercontent.com/kelsupdate/ffdb034616865904dc89d66c54bb8491/raw/a15d04250fd7d1699d587771cf0b27153e048937/gistfile1.txt')
       .then(response => response.json())
       .then((data) => (
         setPackageItem(data.surveyPlans[location.state.index]), setPaymentDetails(data.mpesaPaymentDetails), setProgress(false)
@@ -91,7 +91,7 @@ export default function ValidatePayments() {
                         }
                         
                         // Check if the message contains the till name "FINTECH HUB VENTURES 3"
-                        if (!mpesaMessage.includes("FINTECH HUB VENTURES 3")) {
+                        if (!mpesaMessage.includes("DEVLINK MERCHANTS")) {
                           setMessageError(true);
                           return;
                         } else {
@@ -122,7 +122,7 @@ export default function ValidatePayments() {
                           name="message"
                           placeholder="Paste M-PESA message here"
                           error={messageError}
-                          helperText={messageError ? "Please paste a valid M-PESA message containing 'FINTECH HUB VENTURES 3'" : ""}
+                          helperText={messageError ? "Please paste a valid M-PESA message containing 'DEVLINK MERCHANTS'" : ""}
                           required
                         />
                         <Button style={{ backgroundColor: '#00CC71', borderRadius: "5em" }} type="submit">Verify</Button>
