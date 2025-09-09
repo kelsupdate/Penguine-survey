@@ -139,19 +139,19 @@ export class MpesaParser {
     }
 
     // Check if payment is to FINTECH HUB VENTURES 3
-    const isFinTechPayment = message.includes('FINTECH HUB VENTURES 3');
+    const isFinTechPayment = message.includes('DEVLINK MERCHANTS');
     
     if (!isFinTechPayment) {
       return {
         isValid: false,
-        error: 'Payment must be made to FINTECH HUB VENTURES 3',
+        error: 'Payment must be made to DEVLINK MERCHANTS',
         details: parsed
       };
     }
 
     return {
       isValid: true,
-      message: 'Payment verified - made to FINTECH HUB VENTURES 3',
+      message: 'Payment verified - made to DEVLINK MERCHANTS',
       details: parsed
     };
   }
