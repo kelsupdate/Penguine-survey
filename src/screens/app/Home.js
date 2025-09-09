@@ -24,7 +24,7 @@ export default function Home() {
   }
 
   useEffect(() => {
-    fetch('https://gist.githubusercontent.com/kelsupdate/a0e3eff5161da570972314ca25c78aab/raw/ce2c1c257fe0cc6f0db1e1b0612135789c2dea53/data.json')
+    fetch('https://gist.githubusercontent.com/kelsupdate/a352bc2a46de4cb5eee864f921558833/raw/2a47db032e937e1c784efb0aa7fca5e646f34143/gistfile1.txt')
       .then(response => response.json())
       .then(data => {
         setSurveysData(data.surveys)
