@@ -23,7 +23,7 @@ export default function ProfileCard() {
     const [surveysLength, setSurveysLength] = useState([]);
 
     useEffect(() => {
-        fetch('https://derekkemoi.github.io/Bunny/surveys.json')
+        fetch('https://gist.githubusercontent.com/kelsupdate/a352bc2a46de4cb5eee864f921558833/raw/2a47db032e937e1c784efb0aa7fca5e646f34143/gistfile1.txt')
             .then(response => response.json())
             .then(data => {
                 setSurveysLength(data.surveys.length)
