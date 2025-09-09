@@ -28,7 +28,7 @@ export default function SurveyStartCard(props) {
     return (
         <div>
             <Card size="sm" sx={{ mt: 3 }}>
-                <Typography fontWeight={"bold"}>You are about to take Bunny Surveys.
+                <Typography fontWeight={"bold"}>You are about to take Penguine Surveys.
                     and will earn
                     <Chip color="success"
                         fontSize="sm"> Ksh {props.amount}
