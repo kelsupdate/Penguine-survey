@@ -73,7 +73,7 @@ function ResponsiveAppBar() {
                   mt: { xs: 0.2, md: 0.4 }
                 }}
               >
-                Pinecoin
+                PENGUINE SURVEY
               </Typography>
             </Box>
             <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 1, justifyContent: 'space-around', ml: { xs: 1, md: 3 } }}>
